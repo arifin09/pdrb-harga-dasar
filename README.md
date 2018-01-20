@@ -10,13 +10,44 @@ $ composer require bantenprov/pdrb-harga-dasar:dev-master
 Tambahkan route di dalam : `resources/assets/js/routes.js` :
 
 ```javascript
-{
-path: '/dashboard/pdrb-harga-dasar',
-    component: resolve => require(['./components/bantenprov/pdrb-harga-dasar/Index.vue'], resolve),
-    meta: {
-        title: "PDRB Harga Dasar"
+path: '/dashboard',
+    redirect: '/dashboard/home',
+    component: resolve => require(['./DashboardLayout.vue'], resolve),
+    children: [
+    .....
+    
+    {
+    path: '/dashboard/pdrb-harga-dasar',
+        component: resolve => require(['./components/bantenprov/pdrb-harga-dasar/Index.vue'], resolve),
+        meta: {
+            title: "PDRB Harga Dasar"
+        }
     }
-}
+```
+
+```javascript
+{
+    path: '/admin',
+    redirect: '/admin/home',
+    component: resolve => require(['./AdminLayout.vue'], resolve),
+    children: [
+      {
+        path: '/admin/home',
+        component: resolve => require(['./components/bantenprov/pdrb-harga-dasar/PdrbHargaDasarAdmin.view.vue'], resolve),
+        meta: {
+          title: "PDRB Harga Dasar"
+        }
+      },
+      {
+        path: '/admin/pdrb-harga-dasar',
+        component: resolve => require(['./components/bantenprov/pdrb-harga-dasar/PdrbHargaDasarAdmin.view.vue'], resolve),
+        meta: {
+          title: "PDRB Harga Dasar"
+        }
+      }
+    ]
+  },
+
 ```
 
 Tambahkan components `resources/assets/js/components.js` :

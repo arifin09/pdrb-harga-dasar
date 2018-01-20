@@ -55,6 +55,12 @@ Tambahkan components `resources/assets/js/components.js` :
 ```javascript
 import PdrbHargaDasar from './components/bantenprov/pdrb-harga-dasar/PdrbHargaDasar.chart.vue';
 Vue.component('echarts-pdrb-harga-dasar', PdrbHargaDasar);
+
+import PdrbHargaDasarKota from './components/bantenprov/pdrb-harga-dasar/PdrbHargaDasarKota.chart.vue';
+Vue.component('echarts-pdrb-harga-dasar-kota', PdrbHargaDasarKota);
+
+import PdrbHargaDasarTahun from './components/bantenprov/pdrb-harga-dasar/PdrbHargaDasarTahun.chart.vue';
+Vue.component('echarts-pdrb-harga-dasar-tahun', PdrbHargaDasarTahun);
 ```
 
 Untuk publish component vue :

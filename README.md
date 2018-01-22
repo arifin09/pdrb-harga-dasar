@@ -37,7 +37,7 @@ path: '/dashboard',
     
     {
     path: '/dashboard/pdrb-harga-dasar',
-        component: resolve => require(['./components/bantenprov/pdrb-harga-dasar/Index.vue'], resolve),
+        component: resolve => require(['./components/views/bantenprov/pdrb-harga-dasar/DashboardPdrbHargaDasar.vue'], resolve),
         meta: {
             title: "PDRB Harga Dasar"
         }
@@ -69,6 +69,35 @@ path: '/dashboard',
 
 ```
 
+Edit menu `resources/assets/js/menu.js`
+
+```javascript
+{
+    name: 'Dashboard',
+    icon: 'fa fa-dashboard',
+    childType: 'collapse',
+    childItem: [
+      {
+        name: 'Dashboard',
+        link: '/dashboard',
+        icon: 'fa fa-angle-double-right'
+      },
+      {
+        name: 'Entity',
+        link: '/dashboard/entity',
+        icon: 'fa fa-angle-double-right'
+      },
+      //...
+      {
+        name: 'PDRB Harga Dasar',
+        link: '/dashboard/pdrb-harga-dasar',
+        icon: 'fa fa-angle-double-right'
+      }
+    ]
+  },
+```
+
+
 Tambahkan components `resources/assets/js/components.js` :
 
 ```javascript
@@ -83,6 +112,15 @@ Vue.component('echarts-pdrb-harga-dasar-tahun', PdrbHargaDasarTahun);
 
 import PdrbHargaDasarAdminView from '../components/bantenprov/pdrb-harga-dasar/PdrbHargaDasarAdmin.view.vue';
 Vue.component('admin-view-pdrb-harga-dasar-tahun', PdrbHargaDasarAdminView);
+
+//== Echarts pdrb
+
+import PdrbHargaDasarBar01 from './components/views/bantenprov/pdrb-harga-dasar/PdrbHargaDasarBar01.vue';
+Vue.component('pdrb-harga-dasar-bar-01', PdrbHargaDasarBar01);
+
+import PdrbHargaDasarPie01 from './components/views/bantenprov/pdrb-harga-dasar/PdrbHargaDasarPie01.vue';
+Vue.component('pdrb-harga-dasar-pie-01', PdrbHargaDasarPie01);
+
 
 ```
 

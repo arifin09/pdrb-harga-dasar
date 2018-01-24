@@ -4,13 +4,13 @@
 
 Product domestic regional bruto (PDRB) atas dasar harga berlaku
 
-Cara install :
+#### Cara install :
 
 ```bash
 $ composer require bantenprov/pdrb-harga-dasar:dev-master
 ```
 
-Edit `config/app.php` :
+#### Edit `config/app.php` :
 ```php
 
 'providers' => [
@@ -29,7 +29,7 @@ Edit `config/app.php` :
 
 ```
 
-Tambahkan route di dalam : `resources/assets/js/routes.js` :
+#### Tambahkan route di dalam : `resources/assets/js/routes.js` :
 
 ```javascript
 path: '/dashboard',
@@ -72,7 +72,7 @@ path: '/dashboard',
 
 ```
 
-Edit menu `resources/assets/js/menu.js`
+#### Edit menu `resources/assets/js/menu.js`
 
 ```javascript
 {
@@ -101,7 +101,7 @@ Edit menu `resources/assets/js/menu.js`
 ```
 
 
-Tambahkan components `resources/assets/js/components.js` :
+#### Tambahkan components `resources/assets/js/components.js` :
 
 ```javascript
 import PdrbHargaDasar from './components/bantenprov/pdrb-harga-dasar/PdrbHargaDasar.chart.vue';

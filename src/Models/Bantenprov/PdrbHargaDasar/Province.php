@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Models\Bantenprov\PdrbHargaDasar;
+namespace Bantenprov\PdrbHargaDasar\Models\Bantenprov\PdrbHargaDasar;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;

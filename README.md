@@ -127,7 +127,7 @@ Vue.component('pdrb-harga-dasar-pie-01', PdrbHargaDasarPie01);
 
 ```
 
-Untuk publish component vue :
+#### Untuk publish component vue :
 
 ```bash
 $ php artisan vendor:publish --tag=pdrb-assets

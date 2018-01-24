@@ -1,0 +1,394 @@
+[
+  {
+    "chartdata": {
+      "grafik": [
+        {
+          "tahun"  : "2010",
+          "tingkat": "dua",
+          "wilayah": "Kabupaten",
+          "name": "Pandeglang",
+          "data" : 12279.5
+        },
+        {
+          "tahun"  : "2011",
+          "tingkat": "dua",
+          "wilayah": "Kabupaten",
+          "name": "Pandeglang",
+          "data" : 13960.8
+        },
+        {
+          "tahun"  : "2012",
+          "tingkat": "dua",
+          "wilayah": "Kabupaten",
+          "name": "Pandeglang",
+          "data" : 15125.9
+        },
+        {
+          "tahun"  : "2013",
+          "tingkat": "dua",
+          "wilayah": "Kabupaten",
+          "name": "Pandeglang",
+          "data" : 16742.0
+        },
+        {
+          "tahun"  : "2014",
+          "tingkat": "dua",
+          "wilayah": "Kabupaten",
+          "name": "Pandeglang",
+          "data" : 18606.9
+        },
+        {
+          "tahun"  : "2015",
+          "tingkat": "dua",
+          "wilayah": "Kabupaten",
+          "name": "Pandeglang",
+          "data" : 20729.2
+        },
+
+        {
+          "tahun"  : "2010",
+          "tingkat": "dua",
+          "wilayah": "Kabupaten",
+          "name": "Tangerang",
+          "data" : 58099.4
+        },
+        {
+          "tahun"  : "2011",
+          "tingkat": "dua",
+          "wilayah": "Kabupaten",
+          "name": "Tangerang",
+          "data" : 65741.3
+        },
+        {
+          "tahun"  : "2012",
+          "tingkat": "dua",
+          "wilayah": "Kabupaten",
+          "name": "Tangerang",
+          "data" : 72303.7
+        },
+        {
+          "tahun"  : "2013",
+          "tingkat": "dua",
+          "wilayah": "Kabupaten",
+          "name": "Tangerang",
+          "data" : 80570.6
+        },
+        {
+          "tahun"  : "2014",
+          "tingkat": "dua",
+          "wilayah": "Kabupaten",
+          "name": "Tangerang",
+          "data" : 91692.8
+        },
+        {
+          "tahun"  : "2015",
+          "tingkat": "dua",
+          "wilayah": "Kabupaten",
+          "name": "Tangerang",
+          "data" : 102044.7
+        },
+        {
+          "tahun"  : "2010",
+          "tingkat": "dua",
+          "wilayah": "Kabupaten",
+          "name": "Serang",
+          "data" : 33841.0
+        },
+        {
+          "tahun"  : "2011",
+          "tingkat": "dua",
+          "wilayah": "Kabupaten",
+          "name": "Serang",
+          "data" : 38186.9
+        },
+        {
+          "tahun"  : "2012",
+          "tingkat": "dua",
+          "wilayah": "Kabupaten",
+          "name": "Serang",
+          "data" : 42039.5
+        },
+        {
+          "tahun"  : "2013",
+          "tingkat": "dua",
+          "wilayah": "Kabupaten",
+          "name": "Serang",
+          "data" : 45972.3
+        },
+        {
+          "tahun"  : "2014",
+          "tingkat": "dua",
+          "wilayah": "Kabupaten",
+          "name": "Serang",
+          "data" : 51430.8
+        },
+        {
+          "tahun"  : "2015",
+          "tingkat": "dua",
+          "wilayah": "Kabupaten",
+          "name": "Serang",
+          "data" : 56313.7
+        },
+
+        {
+          "tahun"  : "2010",
+          "tingkat": "dua",
+          "wilayah": "Kabupaten",
+          "name": "Tangerang",
+          "data" : 66921.4
+        },
+        {
+          "tahun"  : "2011",
+          "tingkat": "dua",
+          "wilayah": "Kabupaten",
+          "name": "Tangerang",
+          "data" : 75709.9
+        },
+        {
+          "tahun"  : "2012",
+          "tingkat": "dua",
+          "wilayah": "Kabupaten",
+          "name": "Tangerang",
+          "data" : 83648.1
+        },
+        {
+          "tahun"  : "2013",
+          "tingkat": "dua",
+          "wilayah": "Kabupaten",
+          "name": "Tangerang",
+          "data" : 94561.0
+        },
+        {
+          "tahun"  : "2014",
+          "tingkat": "dua",
+          "wilayah": "Kabupaten",
+          "name": "Tangerang",
+          "data" : 110772.3
+        },
+        {
+          "tahun"  : "2015",
+          "tingkat": "dua",
+          "wilayah": "Kabupaten",
+          "name": "Tangerang",
+          "data" : 126119.1
+        },
+
+        {
+          "tahun"  : "2010",
+          "tingkat": "dua",
+          "wilayah": "Kabupaten",
+          "name": "Cilegon",
+          "data" : 12549.1
+        },
+        {
+          "tahun"  : "2011",
+          "tingkat": "dua",
+          "wilayah": "Kabupaten",
+          "name": "Cilegon",
+          "data" : 49827.1
+        },
+        {
+          "tahun"  : "2012",
+          "tingkat": "dua",
+          "wilayah": "Kabupaten",
+          "name": "Cilegon",
+          "data" : 55414.1
+        },
+        {
+          "tahun"  : "2013",
+          "tingkat": "dua",
+          "wilayah": "Kabupaten",
+          "name": "Cilegon",
+          "data" : 61746.1
+        },
+        {
+          "tahun"  : "2014",
+          "tingkat": "dua",
+          "wilayah": "Kabupaten",
+          "name": "Cilegon",
+          "data" : 70030.1
+        },
+        {
+          "tahun"  : "2015",
+          "tingkat": "dua",
+          "wilayah": "Kabupaten",
+          "name": "Cilegon",
+          "data" : 77962.9
+        },
+
+        {
+          "tahun"  : "2010",
+          "tingkat": "dua",
+          "wilayah": "Kota",
+          "name": "Serang",
+          "data" : 12549.9
+        },
+        {
+          "tahun"  : "2011",
+          "tingkat": "dua",
+          "wilayah": "Kota",
+          "name": "Serang",
+          "data" : 14160.9
+        },
+        {
+          "tahun"  : "2012",
+          "tingkat": "dua",
+          "wilayah": "Kota",
+          "name": "Serang",
+          "data" : 15506.9
+        },
+        {
+          "tahun"  : "2013",
+          "tingkat": "dua",
+          "wilayah": "Kota",
+          "name": "Serang",
+          "data" : 17452.9
+        },
+        {
+          "tahun"  : "2014",
+          "tingkat": "dua",
+          "wilayah": "Kota",
+          "name": "Serang",
+          "data" : 19691.9
+        },
+        {
+          "tahun"  : "2015",
+          "tingkat": "dua",
+          "wilayah": "Kota",
+          "name": "Serang",
+          "data" : 21866.9
+        },
+
+        {
+          "tahun"  : "2010",
+          "tingkat": "dua",
+          "wilayah": "Kota",
+          "name": "Tangerang Selatan",
+          "data" : 30525.9
+        },
+        {
+          "tahun"  : "2011",
+          "tingkat": "dua",
+          "wilayah": "Kota",
+          "name": "Tangerang Selatan",
+          "data" : 34891.9
+        },
+        {
+          "tahun"  : "2012",
+          "tingkat": "dua",
+          "wilayah": "Kota",
+          "name": "Tangerang Selatan",
+          "data" : 39071.9
+        },
+        {
+          "tahun"  : "2013",
+          "tingkat": "dua",
+          "wilayah": "Kota",
+          "name": "Tangerang Selatan",
+          "data" : 44346.9
+        },
+        {
+          "tahun"  : "2014",
+          "tingkat": "dua",
+          "wilayah": "Kota",
+          "name": "Tangerang Selatan",
+          "data" : 50214.9
+        },
+        {
+          "tahun"  : "2015",
+          "tingkat": "dua",
+          "wilayah": "Kota",
+          "name": "Tangerang Selatan",
+          "data" : 56044.9
+        },
+
+        {
+          "tahun"  : "2010",
+          "tingkat": "satu",
+          "wilayah": "Provinsi",
+          "name": "Banten",
+          "data" : 271465.9
+        },
+        {
+          "tahun"  : "2011",
+          "tingkat": "satu",
+          "wilayah": "Provinsi",
+          "name": "Banten",
+          "data" : 306174.9
+        },
+        {
+          "tahun"  : "2012",
+          "tingkat": "satu",
+          "wilayah": "Provinsi",
+          "name": "Banten",
+          "data" : 338224.9
+        },
+        {
+          "tahun"  : "2013",
+          "tingkat": "satu",
+          "wilayah": "Provinsi",
+          "name": "Banten",
+          "data" : 377836.9
+        },
+        {
+          "tahun"  : "2014",
+          "tingkat": "satu",
+          "wilayah": "Provinsi",
+          "name": "Banten",
+          "data" : 428473.9
+        },
+        {
+          "tahun"  : "2015",
+          "tingkat": "satu",
+          "wilayah": "Provinsi",
+          "name": "Banten",
+          "data" : 477936.9
+        },
+
+        {
+          "tahun"  : "2010",
+          "tingkat": "pusat",
+          "wilayah": "Negara",
+          "name": "Indonesia",
+          "data" : 6864133.9
+        },
+        {
+          "tahun"  : "2011",
+          "tingkat": "pusat",
+          "wilayah": "Negara",
+          "name": "Indonesia",
+          "data" : 7831726.9
+        },
+        {
+          "tahun"  : "2012",
+          "tingkat": "pusat",
+          "wilayah": "Negara",
+          "name": "Indonesia",
+          "data" : 8615704.9
+        },
+        {
+          "tahun"  : "2013",
+          "tingkat": "pusat",
+          "wilayah": "Negara",
+          "name": "Indonesia",
+          "data" : 9546134.9
+        },
+        {
+          "tahun"  : "2014",
+          "tingkat": "pusat",
+          "wilayah": "Negara",
+          "name": "Indonesia",
+          "data" : 10565817.9
+        },
+        {
+          "tahun"  : "2015",
+          "tingkat": "pusat",
+          "wilayah": "Negara",
+          "name": "Indonesia",
+          "data" : 11540789.9
+        }
+
+      ]
+    }
+  }
+]

@@ -39,8 +39,12 @@ path: '/dashboard',
     .....
     
     {
-    path: '/dashboard/pdrb-harga-dasar',
-        component: resolve => require(['./components/views/bantenprov/pdrb-harga-dasar/DashboardPdrbHargaDasar.vue'], resolve),
+    		path: '/dashboard/pdrb-harga-dasar',
+        components: {
+          main: resolve => require(['./components/views/bantenprov/pdrb-harga-dasar/DashboardPdrbHargaDasar.vue'], resolve),
+          navbar: resolve => require(['./components/Navbar.vue'], resolve),
+          sidebar: resolve => require(['./components/Sidebar.vue'], resolve)
+        },
         meta: {
             title: "PDRB Harga Dasar"
         }
@@ -50,19 +54,16 @@ path: '/dashboard',
 ```javascript
 {
     path: '/admin',
-    redirect: '/admin/home',
+    redirect: '/admin/dashboard',
     component: resolve => require(['./AdminLayout.vue'], resolve),
     children: [
       {
-        path: '/admin/home',
-        component: resolve => require(['./components/bantenprov/pdrb-harga-dasar/PdrbHargaDasarAdmin.show.vue'], resolve),
-        meta: {
-          title: "PDRB Harga Dasar"
-        }
-      },
-      {
-        path: '/admin/pdrb-harga-dasar',
-        component: resolve => require(['./components/bantenprov/pdrb-harga-dasar/PdrbHargaDasarAdmin.show.vue'], resolve),
+        path: '/admin/dashboard',
+        components: {
+        	main: resolve => require(['./components/bantenprov/pdrb-harga-dasar/PdrbHargaDasarAdmin.show.vue'], resolve),
+        	navbar: resolve => require(['./components/Navbar.vue'], resolve),
+        	sidebar: resolve => require(['./components/Sidebar.vue'], resolve)
+        },
         meta: {
           title: "PDRB Harga Dasar"
         }

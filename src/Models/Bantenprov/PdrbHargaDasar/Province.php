@@ -2,6 +2,7 @@
 
 namespace Bantenprov\PdrbHargaDasar\Models\Bantenprov\PdrbHargaDasar;
 
+
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 

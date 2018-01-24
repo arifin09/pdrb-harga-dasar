@@ -1,13 +1,16 @@
 # PDRB atas Harga Dasar Berlaku
+
+[![Join the chat at https://gitter.im/pdrb-harga-dasar/Lobby](https://badges.gitter.im/pdrb-harga-dasar/Lobby.svg)](https://gitter.im/pdrb-harga-dasar/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Product domestic regional bruto (PDRB) atas dasar harga berlaku
 
-Cara install :
+#### Cara install :
 
 ```bash
 $ composer require bantenprov/pdrb-harga-dasar:dev-master
 ```
 
-Edit `config/app.php` :
+#### Edit `config/app.php` :
 ```php
 
 'providers' => [
@@ -26,7 +29,7 @@ Edit `config/app.php` :
 
 ```
 
-Tambahkan route di dalam : `resources/assets/js/routes.js` :
+#### Tambahkan route di dalam : `resources/assets/js/routes.js` :
 
 ```javascript
 path: '/dashboard',
@@ -69,7 +72,7 @@ path: '/dashboard',
 
 ```
 
-Edit menu `resources/assets/js/menu.js`
+#### Edit menu `resources/assets/js/menu.js`
 
 ```javascript
 {
@@ -98,7 +101,7 @@ Edit menu `resources/assets/js/menu.js`
 ```
 
 
-Tambahkan components `resources/assets/js/components.js` :
+#### Tambahkan components `resources/assets/js/components.js` :
 
 ```javascript
 import PdrbHargaDasar from './components/bantenprov/pdrb-harga-dasar/PdrbHargaDasar.chart.vue';
@@ -124,7 +127,7 @@ Vue.component('pdrb-harga-dasar-pie-01', PdrbHargaDasarPie01);
 
 ```
 
-Untuk publish component vue :
+#### Untuk publish component vue :
 
 ```bash
 $ php artisan vendor:publish --tag=pdrb-assets

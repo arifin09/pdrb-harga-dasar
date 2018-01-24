@@ -113,8 +113,8 @@ Vue.component('echarts-pdrb-harga-dasar-kota', PdrbHargaDasarKota);
 import PdrbHargaDasarTahun from './components/bantenprov/pdrb-harga-dasar/PdrbHargaDasarTahun.chart.vue';
 Vue.component('echarts-pdrb-harga-dasar-tahun', PdrbHargaDasarTahun);
 
-import PdrbHargaDasarAdminView from '../components/bantenprov/pdrb-harga-dasar/PdrbHargaDasarAdmin.view.vue';
-Vue.component('admin-view-pdrb-harga-dasar-tahun', PdrbHargaDasarAdminView);
+import PdrbHargaDasarAdminShow from './components/bantenprov/pdrb-harga-dasar/PdrbHargaDasarAdmin.show.vue';
+Vue.component('admin-view-pdrb-harga-dasar-tahun', PdrbHargaDasarAdminShow);
 
 //== Echarts pdrb
 

@@ -33,6 +33,7 @@ class PdrbHargaDasarServiceProvider extends ServiceProvider
         $this->viewHandle();
         $this->assetHandle();
         $this->migrationHandle();
+        $this->publicHandle();
     }
 
     /**
@@ -153,5 +154,14 @@ class PdrbHargaDasarServiceProvider extends ServiceProvider
         $this->publishes([
             $packageMigrationsPath => database_path('migrations')
         ], 'migrations');
+    }
+
+    public function publicHandle()
+    {
+        $packagePublicPath = __DIR__.'/public';
+
+        $this->publishes([
+            $packagePublicPath => base_path('public')
+        ], 'pdrb-public');
     }
 }

@@ -142,6 +142,7 @@ Vue.component('pdrb-harga-dasar-pie-01', PdrbHargaDasarPie01);
 
 ```bash
 $ php artisan vendor:publish --tag=pdrb-assets
+$ php artisan vendor:publish --tag=pdrb-public
 ```
 
 

@@ -15,17 +15,17 @@ $ composer require bantenprov/pdrb-harga-dasar:dev-master
 
 'providers' => [
 
-        /*
-         * Laravel Framework Service Providers...
-         */
-        Illuminate\Auth\AuthServiceProvider::class,
-        Illuminate\Broadcasting\BroadcastServiceProvider::class,
-        Illuminate\Bus\BusServiceProvider::class,
-        Illuminate\Cache\CacheServiceProvider::class,
-        Illuminate\Foundation\Providers\ConsoleSupportServiceProvider::class,
-        Illuminate\Cookie\CookieServiceProvider::class,
-        //....
-        Bantenprov\PdrbHargaDasar\PdrbHargaDasarServiceProvider::class,
+/*
+* Laravel Framework Service Providers...
+*/
+Illuminate\Auth\AuthServiceProvider::class,
+Illuminate\Broadcasting\BroadcastServiceProvider::class,
+Illuminate\Bus\BusServiceProvider::class,
+Illuminate\Cache\CacheServiceProvider::class,
+Illuminate\Foundation\Providers\ConsoleSupportServiceProvider::class,
+Illuminate\Cookie\CookieServiceProvider::class,
+//....
+Bantenprov\PdrbHargaDasar\PdrbHargaDasarServiceProvider::class,
 
 ```
 
@@ -33,43 +33,53 @@ $ composer require bantenprov/pdrb-harga-dasar:dev-master
 
 ```javascript
 path: '/dashboard',
-    redirect: '/dashboard/home',
-    component: resolve => require(['./DashboardLayout.vue'], resolve),
-    children: [
-    .....
-    
-    {
-    		path: '/dashboard/pdrb-harga-dasar',
-        components: {
-          main: resolve => require(['./components/views/bantenprov/pdrb-harga-dasar/DashboardPdrbHargaDasar.vue'], resolve),
-          navbar: resolve => require(['./components/Navbar.vue'], resolve),
-          sidebar: resolve => require(['./components/Sidebar.vue'], resolve)
-        },
-        meta: {
-            title: "PDRB Harga Dasar"
-        }
-    }
+component: layout('Default'),
+children: [
+{
+path: '/dashboard',
+components: {
+main: resolve => require(['./components/views/DashboardHome.vue'], resolve),
+navbar: resolve => require(['./components/Navbar.vue'], resolve),
+sidebar: resolve => require(['./components/Sidebar.vue'], resolve)
+},
+meta: {
+title: "Dashboard"
+}
+},
+//.....
+
+{
+path: '/dashboard/pdrb-harga-dasar',
+components: {
+main: resolve => require(['./components/views/bantenprov/pdrb-harga-dasar/DashboardPdrbHargaDasar.vue'], resolve),
+navbar: resolve => require(['./components/Navbar.vue'], resolve),
+sidebar: resolve => require(['./components/Sidebar.vue'], resolve)
+},
+meta: {
+title: "PDRB Harga Dasar"
+}
+}
 ```
 
 ```javascript
 {
-    path: '/admin',
-    redirect: '/admin/dashboard',
-    component: resolve => require(['./AdminLayout.vue'], resolve),
-    children: [
-      {
-        path: '/admin/dashboard',
-        components: {
-        	main: resolve => require(['./components/bantenprov/pdrb-harga-dasar/PdrbHargaDasarAdmin.show.vue'], resolve),
-        	navbar: resolve => require(['./components/Navbar.vue'], resolve),
-        	sidebar: resolve => require(['./components/Sidebar.vue'], resolve)
-        },
-        meta: {
-          title: "PDRB Harga Dasar"
-        }
-      }
-    ]
-  },
+path: '/admin',
+redirect: '/admin/dashboard',
+component: resolve => require(['./AdminLayout.vue'], resolve),
+children: [
+{
+path: '/admin/dashboard',
+components: {
+main: resolve => require(['./components/bantenprov/pdrb-harga-dasar/PdrbHargaDasarAdmin.show.vue'], resolve),
+navbar: resolve => require(['./components/Navbar.vue'], resolve),
+sidebar: resolve => require(['./components/Sidebar.vue'], resolve)
+},
+meta: {
+title: "PDRB Harga Dasar"
+}
+}
+]
+},
 
 ```
 
@@ -77,28 +87,28 @@ path: '/dashboard',
 
 ```javascript
 {
-    name: 'Dashboard',
-    icon: 'fa fa-dashboard',
-    childType: 'collapse',
-    childItem: [
-      {
-        name: 'Dashboard',
-        link: '/dashboard',
-        icon: 'fa fa-angle-double-right'
-      },
-      {
-        name: 'Entity',
-        link: '/dashboard/entity',
-        icon: 'fa fa-angle-double-right'
-      },
-      //...
-      {
-        name: 'PDRB Harga Dasar',
-        link: '/dashboard/pdrb-harga-dasar',
-        icon: 'fa fa-angle-double-right'
-      }
-    ]
-  },
+name: 'Dashboard',
+icon: 'fa fa-dashboard',
+childType: 'collapse',
+childItem: [
+{
+name: 'Dashboard',
+link: '/dashboard',
+icon: 'fa fa-angle-double-right'
+},
+{
+name: 'Entity',
+link: '/dashboard/entity',
+icon: 'fa fa-angle-double-right'
+},
+//...
+{
+name: 'PDRB Harga Dasar',
+link: '/dashboard/pdrb-harga-dasar',
+icon: 'fa fa-angle-double-right'
+}
+]
+},
 ```
 
 

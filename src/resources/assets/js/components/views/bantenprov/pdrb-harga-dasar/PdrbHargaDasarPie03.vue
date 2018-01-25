@@ -1,5 +1,5 @@
 <template>
-  <div style="width: 100%; height: 400px;">
+  <div style="width: 100%; height: 200px;">
     <IEcharts :option="pie"></IEcharts>
   </div>
 </template>
@@ -14,11 +14,11 @@ export default {
   data () {
     return {
       pie: {
-        backgroundColor: '#fff',
+        backgroundColor: '#28A745',
         title: {
           text: 'ECharts pie',
           left: 'center',
-          top: 20,
+          top: 0,
           textStyle: {
             color: '#000'
           }
@@ -86,7 +86,7 @@ export default {
     }
   },
   mounted: function () {
-    axios.get('/json/bantenprov/pdrb-harga-dasar/pdrb-harga-dasar01.json').then(response => {
+    axios.get('/json/bantenprov/pdrb-harga-dasar/pdrb-harga-dasar03.json').then(response => {
       let i = 0;
       for(var first = 0; first < Object.keys(response.data[0].chartdata.grafik[0].tahun[0]).length; first++){
         this.pie.series[0].data[first].value = Object.values(response.data[0].chartdata.grafik[0].tahun[0])[first]

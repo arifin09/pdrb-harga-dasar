@@ -1,5 +1,5 @@
 <template>
-  <div style="width: 100%; height: 400px;">
+  <div style="width: 100%; height: 200px;">
     <IEcharts :option="bar" :loading="loading"></IEcharts>
   </div>
 </template>
@@ -23,9 +23,16 @@ export default {
           show: true
         },
         xAxis: {
-          data: ['0','0','0','0','0','0']
+          data: ['0','0','0','0','0','0'],
+          axisLabel :{
+            fontSize: 6
+          },
         },
-        yAxis: {},
+        yAxis: {
+          axisLabel :{
+            fontSize: 6
+          },
+        },
         series: [{
           type: 'bar',
           data: [],
@@ -49,7 +56,7 @@ export default {
     }
   },
   mounted: function () {
-    axios.get('/json/bantenprov/pdrb-harga-dasar/pdrb-harga-dasar01.json').then(response => {
+    axios.get('/json/bantenprov/pdrb-harga-dasar/pdrb-harga-dasar03.json').then(response => {
 
       var e = response.data;
       var get = e[0].chartdata.grafik[0];

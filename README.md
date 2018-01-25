@@ -1,7 +1,7 @@
 # PDRB atas Harga Dasar Berlaku
 
 [![Join the chat at https://gitter.im/pdrb-harga-dasar/Lobby](https://badges.gitter.im/pdrb-harga-dasar/Lobby.svg)](https://gitter.im/pdrb-harga-dasar/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/bantenprov/pdrb-harga-dasar/badges/quality-score.png?b=1.0)](https://scrutinizer-ci.com/g/bantenprov/pdrb-harga-dasar/?branch=master)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/bantenprov/pdrb-harga-dasar/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/bantenprov/pdrb-harga-dasar/?branch=master)
 [![Build Status](https://scrutinizer-ci.com/g/bantenprov/pdrb-harga-dasar/badges/build.png?b=master)](https://scrutinizer-ci.com/g/bantenprov/pdrb-harga-dasar/build-status/master)
 
 Product domestic regional bruto (PDRB) atas dasar harga berlaku

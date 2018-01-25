@@ -49,7 +49,7 @@ export default {
     }
   },
   mounted: function () {
-    axios.get('/json/bantenprov/pdrb-harga-dasar/data.json').then(response => {
+    axios.get('/json/bantenprov/pdrb-harga-dasar/pdrb-harga-dasar01.json').then(response => {
 
       var e = response.data;
       var get = e[0].chartdata.grafik[0];

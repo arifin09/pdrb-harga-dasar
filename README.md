@@ -134,11 +134,19 @@ Vue.component('pdrb-harga-dasar-bar-01', PdrbHargaDasarBar01);
 import PdrbHargaDasarBar02 from './components/views/bantenprov/pdrb-harga-dasar/PdrbHargaDasarBar02.vue';
 Vue.component('pdrb-harga-dasar-bar-02', PdrbHargaDasarBar02);
 
+//== mini bar charts
+import PdrbHargaDasarBar03 from './components/views/bantenprov/pdrb-harga-dasar/PdrbHargaDasarBar03.vue';
+Vue.component('pdrb-harga-dasar-bar-03', PdrbHargaDasarBar03);
+
 import PdrbHargaDasarPie01 from './components/views/bantenprov/pdrb-harga-dasar/PdrbHargaDasarPie01.vue';
 Vue.component('pdrb-harga-dasar-pie-01', PdrbHargaDasarPie01);
 
 import PdrbHargaDasarPie02 from './components/views/bantenprov/pdrb-harga-dasar/PdrbHargaDasarPie02.vue';
 Vue.component('pdrb-harga-dasar-pie-02', PdrbHargaDasarPie02);
+
+//== mini pie charts
+import PdrbHargaDasarPie03 from './components/views/bantenprov/pdrb-harga-dasar/PdrbHargaDasarPie03.vue';
+Vue.component('pdrb-harga-dasar-pie-03', PdrbHargaDasarPie03);
 
 
 ```

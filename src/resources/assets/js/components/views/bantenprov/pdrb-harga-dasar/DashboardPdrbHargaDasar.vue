@@ -6,10 +6,10 @@
         <div class="card card-media text-white bg-primary">
           <div class="card-body">
             <div class="media">
-              <i class="fa fa-user fa-card-media-avatar mr-3" aria-hidden="true"></i>
               <div class="media-body text-truncate">
-                <h5 class="mt-0">Users</h5>
-                <span><i class="fa fa-dot-circle-o" aria-hidden="true"></i> 1500</span>
+                <div class="card-body">
+                  <pdrb-harga-dasar-bar-03></pdrb-harga-dasar-bar-03>
+                </div><!-- /.card-body -->
               </div>
             </div>
           </div><!-- /.card-body -->
@@ -19,10 +19,10 @@
         <div class="card card-media text-white bg-success">
           <div class="card-body">
             <div class="media">
-              <i class="fa fa-comments fa-card-media-avatar mr-3" aria-hidden="true"></i>
               <div class="media-body text-truncate">
-                <h5 class="mt-0">Comments</h5>
-                <span><i class="fa fa-dot-circle-o" aria-hidden="true"></i> 500</span>
+                <div class="card-body">
+                  <pdrb-harga-dasar-pie-03></pdrb-harga-dasar-pie-03>
+                </div><!-- /.card-body -->
               </div>
             </div>
           </div><!-- /.card-body -->
@@ -46,15 +46,44 @@
     <!-- ===================================================================== -->
 
     <div class="row">
+
+        <div class="col-md-8">
+
+          <div class="card mb-3">
+            <div class="card-header">
+              <i class="fa fa-bar-chart" aria-hidden="true"></i>
+              PDRB Harga Dasar Berdasarkan Wilayah
+            </div>
+            <div class="card-body">
+              <pdrb-harga-dasar-bar-01></pdrb-harga-dasar-bar-01>
+            </div><!-- /.card-body -->
+          </div><!-- /.card -->
+
+        </div><!-- /col -->
+        <div class="col-md-4">
+
+          <div class="card mb-3">
+            <div class="card-header">
+              <i class="fa fa-pie-chart" aria-hidden="true"></i>
+              PDRB Harga Dasar Berdasarkan Wilayah
+            </div>
+            <div class="card-body">
+              <pdrb-harga-dasar-pie-01></pdrb-harga-dasar-pie-01>
+            </div><!-- /.card-body -->
+          </div><!-- /.card -->
+
+        </div><!-- /col -->
+
+
       <div class="col-md-8">
 
         <div class="card mb-3">
           <div class="card-header">
             <i class="fa fa-bar-chart" aria-hidden="true"></i>
-            PDRB Harga Dasar
+            PDRB Harga Dasar Berdasarkan Tahun
           </div>
           <div class="card-body">
-            <pdrb-harga-dasar-bar-01></pdrb-harga-dasar-bar-01>
+            <pdrb-harga-dasar-bar-02></pdrb-harga-dasar-bar-02>
           </div><!-- /.card-body -->
         </div><!-- /.card -->
 
@@ -111,10 +140,10 @@
         <div class="card mb-3">
           <div class="card-header">
             <i class="fa fa-pie-chart" aria-hidden="true"></i>
-            PDRB Harga Dasar
+            PDRB Harga Dasar Berdasarkan Tahun
           </div>
           <div class="card-body">
-            <pdrb-harga-dasar-pie-01></pdrb-harga-dasar-pie-01>
+            <pdrb-harga-dasar-pie-02></pdrb-harga-dasar-pie-02>
           </div><!-- /.card-body -->
         </div><!-- /.card -->
 

@@ -23,12 +23,22 @@ export default {
           show: true
         },
         xAxis: {
+          show: true,
           data: []
         },
         yAxis: {},
         series: [{
           type: 'bar',
-          data: [],
+          data: [
+                {value:0, name:''},
+                {value:0, name:''},
+                {value:0, name:''},
+                {value:0, name:''},
+                {value:0, name:''},
+                {value:0, name:''},
+                {value:0, name:''},
+                {value:0, name:''}
+          ],
           barWidth: 20,
           barGap: '-100%'
         }],
@@ -50,39 +60,48 @@ export default {
   },
   mounted: function () {
     axios.get('/json/bantenprov/pdrb-harga-dasar/pdrb-harga-dasar02.json').then(response => {
-      this.bar.title.text = 'Tahun ' + Object.keys(response.data[0].chartdata.grafik[0].tahun[0])[0]
+      let obj_key = [];
 
-      for(var name = 0; name < response.data[0].chartdata.grafik.length; name++)
-      {
-        if(response.data[0].chartdata.grafik[name].tingkat == "dua"){
-          this.bar.xAxis.data[name] = response.data[0].chartdata.grafik[name].name;
-        }
-      }
+      var datas = response.data;
 
-      for(var first = 0; first < response.data[0].chartdata.grafik.length; first++)
-      {
-        if(response.data[0].chartdata.grafik[first].tingkat == "dua") {
-          this.bar.series[0].data[first] = Object.values(response.data[0].chartdata.grafik[first].tahun[0])[0]
-        }
-      }
-
-      let i = 0;
-      setInterval(() => {
-        i++;
-        setTimeout(() => {
-          for(var k = 0; k < response.data[0].chartdata.grafik.length; k++)
-          {
-            if(response.data[0].chartdata.grafik[k].tingkat == "dua") {
-              this.bar.series[0].data[k] = Object.values(response.data[0].chartdata.grafik[k].tahun[0])[i]
+      function removeDuplicates(arr){
+        var unique_array = []
+        for(var i = 0;i < arr.length; i++){
+            if(unique_array.indexOf(arr[i]) == -1){
+                unique_array.push(arr[i])
             }
-            this.bar.title.text = 'Tahun ' +Object.keys(response.data[0].chartdata.grafik[k].tahun[0])[i]
-          }
-        }, 1000);
+        }
+        return unique_array
+      }
 
-        if(i ==  Object.keys(response.data[0].chartdata.grafik[0].tahun[0]).length) {
+      Object.values(datas[0])[0].forEach((data, index)=>{
+
+        this.bar.xAxis.data[index] = data.wilayah + ' ' + data.name
+        this.bar.series[0].data[index].name   = data.wilayah + ' ' + data.name
+        this.bar.series[0].data[index].value  = data.data
+        this.bar.title.text = 'Tahun ' + Object.keys(datas[0])[0]
+      })
+
+      var i = 1;
+
+      // perulangan
+      setInterval(()=>{
+        Object.values(datas[0])[i].forEach((data, index) => {
+
+            this.bar.series[0].data[index].name   = data.wilayah + ' ' + data.name
+            this.bar.series[0].data[index].value  = data.data
+            this.bar.title.text = 'Tahun ' + Object.keys(datas[0])[i]
+
+        });
+
+        i++;
+
+        if(i == Object.keys(datas[0]).length)
+        {
           i = 0;
         }
-      }, 5000);
+      },4000)
+
     })
     .catch(function(error) {
       // error

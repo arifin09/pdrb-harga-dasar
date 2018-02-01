@@ -111,6 +111,24 @@ children: [
   ]
 },
 ```
+#### admin
+```javascript
+  {
+    name: 'Admin',
+    icon: 'fa fa-lock',
+    childType: 'collapse',
+    childItem: [
+      {
+        name: 'Dashboard',
+        icon: 'fa fa-angle-double-right',
+        child: [
+        //=== ...
+          {
+            name: 'PDRB Harga dasar',
+            link: '/admin/dashboard/pdrb-harga-dasar',
+            icon: 'fa fa-angle-right'
+          }
+```
 
 
 #### Tambahkan components `resources/assets/js/components.js` :

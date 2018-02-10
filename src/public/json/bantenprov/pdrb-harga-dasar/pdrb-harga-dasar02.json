@@ -1,3 +1,32 @@
+
+Skip to content
+This repository
+
+    Pull requests
+    Issues
+    Marketplace
+    Explore
+
+    @arifin09
+
+0
+0
+
+    6
+
+arifin09/pdrb-harga-dasar forked from bantenprov/pdrb-harga-dasar
+Code
+Pull requests 0
+Projects 0
+Wiki
+Insights
+Settings
+pdrb-harga-dasar/src/public/json/bantenprov/pdrb-harga-dasar/pdrb-harga-dasar02.json
+f2bb081 16 days ago
+@feripratama feripratama update echarts base on year
+@feripratama
+@andri-sudarmawijaya
+355 lines (354 sloc) 7 KB
 [
   {
     "2010": [
@@ -298,56 +327,6 @@
         "name": "Tangerang Selatan",
         "tingkat": "dua",
         "data": 56044.4
-      }
-    ],
-    "2016": [
-      {
-        "wilayah": "Kabupaten",
-        "name": "Pandeglang",
-        "tingkat": "dua",
-        "data": 30278.0
-      },
-      {
-        "wilayah": "Kabupaten",
-        "name": "Lebak",
-        "tingkat": "dua",
-        "data": 30729.2
-      },
-      {
-        "wilayah": "Kabupaten",
-        "name": "Tangerang",
-        "tingkat": "dua",
-        "data": 202044.7
-      },
-      {
-        "wilayah": "Kabupaten",
-        "name": "Serang",
-        "tingkat": "dua",
-        "data": 66313.7
-      },
-      {
-        "wilayah": "Kota",
-        "name": "Tangerang",
-        "tingkat": "dua",
-        "data": 226119.1
-      },
-      {
-        "wilayah": "Kota",
-        "name": "Cilegon",
-        "tingkat": "dua",
-        "data": 87962.9
-      },
-      {
-        "wilayah": "Kota",
-        "name": "Serang",
-        "tingkat": "dua",
-        "data": 31866.6
-      },
-      {
-        "wilayah": "Kota",
-        "name": "Tangerang Selatan",
-        "tingkat": "dua",
-        "data": 66044.4
       }
     ]
   }

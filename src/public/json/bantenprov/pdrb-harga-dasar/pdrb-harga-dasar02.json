@@ -1,32 +1,3 @@
-
-Skip to content
-This repository
-
-    Pull requests
-    Issues
-    Marketplace
-    Explore
-
-    @arifin09
-
-0
-0
-
-    6
-
-arifin09/pdrb-harga-dasar forked from bantenprov/pdrb-harga-dasar
-Code
-Pull requests 0
-Projects 0
-Wiki
-Insights
-Settings
-pdrb-harga-dasar/src/public/json/bantenprov/pdrb-harga-dasar/pdrb-harga-dasar02.json
-f2bb081 16 days ago
-@feripratama feripratama update echarts base on year
-@feripratama
-@andri-sudarmawijaya
-355 lines (354 sloc) 7 KB
 [
   {
     "2010": [
